@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -192,30 +194,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
 							</ul>
 					</div>
-					<div class="col-md-6 contact-form">
+					<div class="col-md-6 contact-form"> 
 						<h4 class="white-w3ls">Contact <span>Form</span></h4>
-						<form action="#" method="post">
+						<?php include('mail.php'); ?>
+						<form action="contact.php" method="post">
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
+								<input type="text" name="name" required="">
 								<label>Name</label>
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<input type="email" name="Email" required=""> 
+								<input type="email" name="email" required=""> 
 								<label>Email</label>
 								<span></span>
 							</div> 
 							<div class="styled-input">
-								<input type="text" name="Subject" required="">
+								<input type="text" name="subject" required="">
 								<label>Subject</label>
 								<span></span>
 							</div>
 							<div class="styled-input">
-								<textarea name="Message" required=""></textarea>
+								<textarea name="message" required=""></textarea>
 								<label>Message</label>
 								<span></span>
 							</div>	 
-							<input type="submit" value="SEND">
+							<input type="submit" name="submit" value="SEND">
 						</form>
 					</div>
 				</div>
