@@ -1,5 +1,5 @@
 <?php 
-    if ($_POST['submit']) {	
+    if (isset($_POST['smail'])){	
             $ToEmail = 'washiemugo@gmail.com'; 
             $EmailSubject = 'From Mintari Contact Form'; 
             $mailheader = "From: ".$_POST["email"]."\r\n"; 
@@ -10,9 +10,7 @@
             $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
             $MESSAGE_BODY .= "Message ".nl2br($_POST["message"]).""; 
             mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-        ?> 
-    Your message was sent
-    <?php 
+        echo "Message Successfully Sent !";
     } else { 
         echo "Message not sent";
     }

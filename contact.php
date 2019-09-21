@@ -218,7 +218,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<label>Message</label>
 								<span></span>
 							</div>	 
-							<input type="submit" name="submit" value="SEND">
+							<input type="submit" name="smail" value="SEND">
 						</form>
 					</div>
 				</div>
