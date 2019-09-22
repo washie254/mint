@@ -1,4 +1,11 @@
 <?php
+date_default_timezone_set("Africa/Nairobi");
+// server info
+// $server = 'localhost';
+// $user ='mintarik_kenya';
+// $pass ='MintariK254';
+// $db = 'mintarik_mintari';
+
 // server info
 $server = 'localhost';
 $user = 'root';

@@ -23,6 +23,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+<link href="css/mint.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <!-- header -->
@@ -149,10 +153,95 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div> 
 	<!-- //banner -->
 
+<!-- ////////////////////// -->
+<section style="background-color:black;">
+	<div class="row"><br>
+		<p><h1 style="text-align:center; color:white;">PRODUCTS</h1></P><br>
+		<div   class="col-md-12" id="div-glow" style="width:98%; height:auto;">
+			<div class="container"><br>
+			<style>
+				.red {
+					width:90%;
+					height:30%;
+					text-align: center;
+					/* background:red; */
+				}
+
+				.blue {
+					width: 11.1%;
+					display:inline-block;
+					margin-right: -4px;
+					box-sizing: border-box;
+					padding: 1%;
+				}
+
+				.blue > div {
+					background:blue;
+					height:100px;
+				}
+			</style>
+			<div class="red">
+				<div class="blue"><div> <img src="images/prods/gifts.jpg"style="width:100%; height:100%"/>Gifts</div></div>
+				<div class="blue"><div> <img src="images/prods/clothes.jpg"style="width:100%; height:100%"/>Clothes</div></div>
+				<div class="blue"><div> <img src="images/prods/shoes.jpg"style="width:100%; height:100%"/>shoes</div></div>
+				<div class="blue"><div> <img src="images/prods/decor.jpg"style="width:100%; height:100%"/>Decor</div></div>
+				<div class="blue"><div> <img src="images/prods/Furniture.jpg"style="width:100%; height:100%"/>Furniture</div></div>
+				<div class="blue"><div> <img src="images/prods/bags.jpg"style="width:100%; height:100%"/>Bags</div></div>
+				<div class="blue"><div> <img src="images/prods/electronics.jpg"style="width:100%; height:100%"/>Electronics</div></div>
+				<div class="blue"><div> <img src="images/prods/other.png"style="width:100%; height:100%"/>Other</div></div>
+				<div class="blue"><div> <img src="images/prods/all.jpg"style="width:100%; height:100%"/>All</div></div>
+
+			</div>
+				<section class="customer-logos slider">
+					<!-- <div style="align:left;"><img id="img-glow-cats2" src="images/prods/all.jpg"><br>some<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div><img id="img-glow-cats2" src="images/prods/clothes.jpg">other</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/gifts.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/shoes.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats" src="images/prods/furniture.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/decor.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/bags.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/electronics.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img id="img-glow-cats2" src="images/prods/other.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+				
+					
+				</section>
+			</div><br>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 3
+					}
+				}]
+			});
+		});
+	</script>
+</section>
+
+
+<!-- //////////////////////// -->
+
 <!-- /new_arrivals --> 
 	<div class="new_arrivals_agile_w3ls_info" style="background-color: black; width: 100%;" id="products"> 
 		<div class="container" style="width: 100%;">
-		    <h3 class="wthree_text_info" style="color: white;">New <span>Arrivals</span></h3>		
+		    <!-- <h3 class="wthree_text_info" style="color: white;">New <span>Arrivals</span></h3>		 -->
 				<div id="horizontalTab">
 					<ul class="resp-tabs-list"> 
 						<style> 
@@ -236,13 +325,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -297,13 +387,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -357,13 +448,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -416,13 +508,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -474,13 +567,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -533,13 +627,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -592,13 +687,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<a href="single.php?id='.$ur.'" class="link-product-add-cart">Quick View</a>
 													</div>
 												</div>
-											<span class="product-new-top">New</span>	
+											<span class="product-new-top" >New</span>	
 									</div>
-									<div class="item-info-product ">
-										<h4><a href="single.php?id='.$ur.'">'.$row[1].'</a></h4>
+									<div class="item-info-product "  id="div-glow2" style="height="100%;"><br>
+										<h4><a href="single.php?id='.$ur.'"><p style="color:white;">'.$row[1].'</p></a></h4>
+											<hr style="height: 2px; width:60%;">
 										<div class="info-product-price">
-											<span class="item_price">Ksh. '.$price.'</span>
-											<b style="color:white;">Ksh. '.$price.'</b>
+											<span class="item_price"> <b style="color:white;">Ksh. '.$price.'</b></span>
+											
 										</div>';
 										?>
 										<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -632,7 +728,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	<!-- //new_arrivals --> 
 	<!-- /we-offer -->
-	<div class="coupons" style="background-color: rgb(0, 99, 248); color: white;">
+	<div class="coupons" style="background-color: #003963; color: white;">
 		<div class="coupons-grids text-center">
 			<div class="w3layouts_mail_grid">
 					<div class="col-md-3 col-xs-6">
@@ -678,7 +774,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //we-offer -->
 <!--/grids-->
 <div style="background-color: black; height:6px;"></div>
-<div class="coupons" style="background-color: rgb(10, 129, 226);">
+<div class="coupons" style="background-color:#305771">
 	<div class="coupons-grids text-center">
 			<p style="color: white; font-family:'Montserrat'; letter-spacing:0.5em; font-size: 22px;"><b>OUR PARTNERS AND SPONSERS</b></p><br><br>
 		<div class="w3layouts_mail_grid">

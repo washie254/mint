@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="nav navbar-nav menu__list">
 					<li class="menu__item "><a class="menu__link" href="index.php">Home <span class="sr-only">(current)</span></a></li>
 					<li class=" menu__item"><a class="menu__link" href="about.php">About</a></li>
-					<li class="active menu__item menu__item--current"><a class="menu__link" href="contact.html">Contact</a></li>
+					<li class="active menu__item menu__item--current"><a class="menu__link" href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 				</div>
@@ -91,22 +91,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="submit" value="Sign In">
 						</form>
 						  <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
-															<li><a href="#" class="facebook">
-																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
-															<li><a href="#" class="twitter"> 
-																  <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-															<li><a href="#" class="instagram">
-																  <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
-															<li><a href="#" class="pinterest">
-																  <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-																  <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
-														</ul>
-														<div class="clearfix"></div>
-														<p><a href="#" data-toggle="modal" data-target="#myModal2" > Don't have an account?</a></p>
-
+							<li><a href="#" class="facebook">
+									<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+									<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+							<li><a href="#" class="twitter"> 
+									<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+									<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+							<li><a href="#" class="instagram">
+									<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+									<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+							<li><a href="#" class="pinterest">
+									<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+									<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+						</ul>
+						<div class="clearfix"></div>
+						<p><a href="#" data-toggle="modal" data-target="#myModal2" > Don't have an account?</a></p>
 						</div>
 						<div class="col-md-4 modal_body_right modal_body_right1">
 							<img src="images/log_pic.jpg" alt=" "/>

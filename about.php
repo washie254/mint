@@ -81,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!-- /banner_bottom_agile_info -->
-    <div class="banner_bottom_agile_info" style="background-color: rgb(50, 123, 168); color: white; height: 500px;">
+    <div class="banner_bottom_agile_info" style="background-color: 	#003764; color: white; height: 500px;">
 	    <div class="container">
 			<div class="agile_ab_w3ls_info">
 			<p><h1  style="text-align:center; letter-spacing:0.5em;">WHAT WE DO</h1></p>
@@ -260,7 +260,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //team -->
 
   <!-- banner-bootom-w3-agileits -->
-	<div class="banner-bootom-w3-agileits" style="color: white; background-color:rgb(50, 123, 168);">
+	<div class="banner-bootom-w3-agileits" style="color: white; background-color:#09233A;">
 	   <div class="container">
 	     <h3 class="wthree_text_info" style="color:white;">About <span>Mintari</span></h3>
 		 <p><b style="letter-spacing:0.2em; font-size:20px; "># Mission Statement </b><br>

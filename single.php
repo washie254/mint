@@ -485,7 +485,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  </div>
 <!--//single_page-->
 <!--/grids-->
-<div class="coupons" style="background-color: rgb(0, 99, 248); color: white;">
+<div class="coupons" style="background-color:#003963; color: white;">
 		<div class="coupons-grids text-center">
 			<div class="w3layouts_mail_grid">
 					<div class="col-md-3 col-xs-6">
